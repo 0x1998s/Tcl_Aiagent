@@ -1,0 +1,15 @@
+{
+    "name": "example_plugin",
+    "version": "1.0.0",
+    "description": "示例插件 - 演示如何创建自定义Agent",
+    "author": "Jemmy Yang",
+    "agent_class": "ExampleAgent",
+    "dependencies": [],
+    "config_schema": {
+        "api_key": {
+            "type": "string",
+            "required": false,
+            "description": "API密钥"
+        }
+    }
+}
