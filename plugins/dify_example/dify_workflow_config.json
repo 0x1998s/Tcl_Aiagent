@@ -1,0 +1,72 @@
+{
+    "workflows": [
+        {
+            "name": "数据查询助手",
+            "app_id": "data_query_assistant",
+            "description": "帮助用户进行数据查询和分析",
+            "input_variables": [
+                "query",
+                "user_context",
+                "data_source"
+            ],
+            "output_variables": [
+                "sql_query",
+                "result_data",
+                "visualization"
+            ],
+            "nodes": [
+                {
+                    "id": "query_parser",
+                    "type": "llm",
+                    "config": {
+                        "model": "gpt-3.5-turbo",
+                        "prompt": "解析用户查询意图，生成SQL查询语句"
+                    }
+                },
+                {
+                    "id": "data_executor",
+                    "type": "code",
+                    "config": {
+                        "language": "python",
+                        "code": "执行SQL查询并返回结果"
+                    }
+                },
+                {
+                    "id": "result_formatter",
+                    "type": "llm",
+                    "config": {
+                        "model": "gpt-3.5-turbo",
+                        "prompt": "格式化查询结果，生成用户友好的响应"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "报告生成器",
+            "app_id": "report_generator",
+            "description": "自动生成数据分析报告",
+            "input_variables": [
+                "report_type",
+                "date_range",
+                "metrics"
+            ],
+            "output_variables": [
+                "report_content",
+                "charts",
+                "insights"
+            ]
+        }
+    ],
+    "routing_rules": [
+        {
+            "pattern": "查询|query|数据",
+            "workflow": "data_query_assistant",
+            "priority": 1
+        },
+        {
+            "pattern": "报告|report|分析",
+            "workflow": "report_generator", 
+            "priority": 2
+        }
+    ]
+}
