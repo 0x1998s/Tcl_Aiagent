@@ -15,7 +15,34 @@
 
 ## 🎯 项目概述
 
-TCL AI Agent是一个完整的企业级数据分析智能助手系统，100%实现了TCL招聘JD中要求的所有核心功能，并在多个方面超越了要求：
+TCL AI Agent DEMO是企业级数据分析智能助手系统，主要实现了TCL招聘JD中要求的所有核心功能，需要注意的是：上传到GitHub版本的是最精简版本的Demo，尚未配置前端，且需要配置Api进行部署测试，仅用于学习讨论：
+
+## 🎬 产品演示
+
+### 🖼️ 系统界面预览
+
+<div align="center">
+
+![TCL AI Agent 系统界面](./演示1.png)
+
+*TCL AI Agent DEMO - 主界面展示*
+
+</div>
+
+### 🎥 核心功能演示视频
+
+<div align="center">
+
+#### 📹 演示视频系列
+
+| 演示内容 | 视频链接 | 主要功能 |
+|---------|---------|---------|
+| 🎬 **核心功能演示1** | [📺 观看视频](https://www.bilibili.com/video/BV1Jk46zcEgg/?vd_source=3e98fb7a81bd7b3c1ee3cc2140231908) | 智能对话、数据查询、基础分析 |
+| 🎬 **核心功能演示2** | [📺 观看视频](https://www.bilibili.com/video/BV1Vu46zXEUz/?vd_source=3e98fb7a81bd7b3c1ee3cc2140231908) | 高级分析、报告生成、预警系统 |
+
+**🚀建议按顺序观看两个演示视频，全面了解TCL AI Agent DEMO **
+
+</div>
 
 ### 🌟 核心特性
 
@@ -405,8 +432,9 @@ MIT License
 
 <div align="center">
 
-**⭐ 如果这个项目对贵司有帮助，请给我发个offer，呜呜呜！**
+**⭐ 如果这个项目对贵司有帮助，欢迎与我深度沟通，感谢您的宝贵时间！**
 
 **🚀 TCL AI Agent - 让数据分析更智能**
 
 </div>
+
